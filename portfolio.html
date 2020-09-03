@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Adrian Abayon</title>
+  <link rel="icon" type="img/png" href="img/profile/logo.png" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/dreabayon.css" />
+
+  <!-- Third Party CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet" />
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="nav-avatar">
+          <img src="img/profile/me_profile.png" alt="Avatar" style="width:100%" />
+        </div>
+        <h1>Adrian Abayon</h1>
+          <div class="icons">
+            <a href="https://github.com/adsdre30" target="_blank">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adrian-abayon/" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.behance.net/dreabayon" target="_blank">
+              <i class="fab fa-behance fa-2x"></i>
+            </a>
+          </div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link"> Profile </a>
+        </li>
+        <li class="nav-item">
+          <a href="timeline.html" class="nav-link"> Timeline </a>
+        </li>
+        <li class="nav-item current">
+          <a href="portfolio.html" class="nav-link"> Portfolio </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link"> Contact </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portfolio">
+    <h1>
+      <div class="page-title">
+        MY <span class="text-secondary">&nbsp;PORTFOLIO</span>
+      </div>
+    </h1>
+
+    <div class="portfolio-menu">
+      <ul class="filter-menu">
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".GraphicDesigns">Graphic Design</li>
+        <li data-filter=".Branding">Branding</li>
+        <li data-filter=".LogoDesigns">Logo Design</li>
+        <li data-filter=".WebApp">Web App</li>
+
+
+      </ul>
+    </div>
+
+    <div class="item">
+
+  
+      <div class="grid-item Branding">
+        <a data-fancybox="gallery" href="img/portfolio/branding/bookv2.jpg" data-caption="">
+          <img src="img/portfolio/branding/bookv2.jpg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item LogoDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/medway.png" data-caption="">
+          <img src="img/portfolio/logo/medway.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item GraphicDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/brochures/lpp-brochure.jpg" data-caption="">
+          <img src="img/portfolio/brochures/lpp-brochure.jpg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item LogoDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/baligyaan-logo.png" data-caption="">
+          <img src="img/portfolio/logo/baligyaan-logo.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item LogoDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/pasalubong-icon.png" data-caption="">
+          <img src="img/portfolio/logo/pasalubong-icon.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item LogoDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/cars-icon.png" data-caption="">
+          <img src="img/portfolio/logo/cars-icon.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item LogoDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/health-and-wellness-icon.png" data-caption="">
+          <img src="img/portfolio/logo/health-and-wellness-icon.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item LogoDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/lens-icon.png" data-caption="">
+          <img src="img/portfolio/logo/lens-icon.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item LogoDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/pasalubong-icon.png" data-caption="">
+          <img src="img/portfolio/logo/pasalubong-icon.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item LogoDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/souvenir-icon.png" data-caption="">
+          <img src="img/portfolio/logo/souvenir-icon.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item Branding">
+        <a data-fancybox="gallery" href="img/portfolio/branding/bookv3.jpg" data-caption="">
+          <img src="img/portfolio/branding/bookv3.jpg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item Branding">
+        <a data-fancybox="gallery" href="img/portfolio/branding/bcardv4.jpg" data-caption="">
+          <img src="img/portfolio/branding/bcardv4.jpg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item Branding">
+        <a data-fancybox="gallery" href="img/portfolio/branding/stationaryv3.jpg" data-caption="">
+          <img src="img/portfolio/branding/stationaryv3.jpg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item GraphicDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/brochures/pizzados.png" data-caption="">
+          <img src="img/portfolio/brochures/pizzados.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item GraphicDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/brochures/pizzadosv2.png" data-caption="">
+          <img src="img/portfolio/brochures/pizzadosv2.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item GraphicDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/brochures/trikee.png" data-caption="">
+          <img src="img/portfolio/brochures/trikee.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item GraphicDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/poster/laboracay.png" data-caption="">
+          <img src="img/portfolio/poster/laboracay.png" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item GraphicDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/poster/bluestar.jpg" data-caption="">
+          <img src="img/portfolio/poster/bluestar.jpg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+      <div class="grid-item GraphicDesigns">
+        <a data-fancybox="gallery" href="img/portfolio/logo/WebDesign.jpg" data-caption="">
+          <img src="img/portfolio/logo/WebDesign.jpg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+
+ 
+
+
+    <!-- ===============  WEB DEVELOPED APPLICATIONS ================ -->
+
+      <!-- #1 -->
+      <div class="grid-item WebApp">
+        <a data-fancybox data-animation-duration="700" data-src="#rnaModal" href="javascript:;" class="">
+          <img src="img/portfolio/webapp/1.png" alt="" class="portfolio-img" /></a>
+
+        <div style="display: none;" id="rnaModal" class="animated-modal">
+          <h2>Ligao Community College Library Management System</h2>
+          <br />
+
+          <!-- START: SLIDESHOW ON FACEBOX -->
+          <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="img/portfolio/webapp/1.png" style="width:100%; height: 350px;">
+            <div class="text">Login Page</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="img/portfolio/webapp/1-1.png" style="width:100%; height: 350px;">
+            <div class="text">Book Management</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+          </div>
+          <!-- END: SLIDESHOW ON FACEBOX -->
+
+          <div style="text-align:center">
+            <p>
+              The Library Management System that i developed for this client residing in Ligao City, Albay is an application for assisting a librarian in managing a book library. The system would provide basic set of features to add/update members, add/update books, and manage check in specifications for the systems based on the client's statement of need.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!-- #2 -->
+      <div class="grid-item WebApp">
+        <a data-fancybox data-animation-duration="700" data-src="#rnaModal2" href="javascript:;" class="">
+          <img src="img/portfolio/webapp/2.png" alt="" class="portfolio-img" /></a>
+
+        <div style="display: none;" id="rnaModal2" class="animated-modal">
+          <h2>PHINMA Araullo University Automated Student ID Systems</h2>
+          <br />
+
+          <!-- START: SLIDESHOW ON FACEBOX -->
+          <div class="slideshow-container">
+
+          <div class="mySlides2 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/portfolio/webapp/2.png" style="width:100%; height: 350px;">
+            <div class="text">Login Page</div>
+          </div>
+
+          <div class="mySlides2 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/portfolio/webapp/2.2.png" style="width:100%; height: 350px;">
+            <div class="text">Dashboard</div>
+          </div>
+
+          <div class="mySlides2 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/portfolio/webapp/2.3.png" style="width:100%; height: 350px;">
+            <div class="text">Account Management</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <!-- END: SLIDESHOW ON FACEBOX -->
+
+          <div class="text-align:center">
+            <p>
+              The Automated Student ID System that i developed for this client residing in Cabanatuan City, Nueva Ecija is an application that scans the student's ID with the use of bar code reader for any violations to enter the school's premises. Guard/s may issue a violation for the student if he/she commited school violation. Violations may be graded on how the punishment will be given. Complying for the requiremnts in school management will be given the student a pass to enter the school.
+          </div>
+        </div>
+      </div>
+      <!-- #3 -->
+      <div class="grid-item WebApp">
+        <a data-fancybox data-animation-duration="700" data-src="#rnaModal3" href="javascript:;" class="">
+          <img src="img/portfolio/webapp/3.png" alt="" class="portfolio-img" /></a>
+
+        <div style="display: none;" id="rnaModal3" class="animated-modal">
+          <h2>The Block E-Commerce Website</h2>
+          <br />
+
+          <!-- START: SLIDESHOW ON FACEBOX -->
+          <div class="slideshow-container">
+
+          <div class="mySlides3 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/portfolio/webapp/3.png" style="width:100%; height: 350px;">
+            <div class="text">Home Page</div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/portfolio/webapp/3.3.png" style="width:100%; height: 350px;">
+            <div class="text">Admin Login</div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/portfolio/webapp/3.4.png" style="width:100%; height: 350px;">
+            <div class="text">Shop Page</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <!-- END: SLIDESHOW ON FACEBOX -->
+
+          <div class="text-align:center">
+            <p>
+              The Block is an E-commerce website that I developed for a client here residing in Kalibo, Aklan. The system may have the managment of their products such as T-shirts, shorts, pants, etc. for men and women of different ages. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #4 -->
+      <div class="grid-item WebApp">
+        <a data-fancybox data-animation-duration="700" data-src="#rnaModal4" href="javascript:;" class="">
+          <img src="img/portfolio/webapp/4.png" alt="" class="portfolio-img" /></a>
+
+        <div style="display: none;" id="rnaModal4" class="animated-modal">
+          <h2>Bake n' Bites Online Ordering System</h2>
+          <br />
+
+          <!-- START: SLIDESHOW ON FACEBOX -->
+          <div class="slideshow-container">
+
+          <div class="mySlides4 fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/portfolio/webapp/4.png" style="width:100%; height: 350px;">
+            <div class="text">Admin Login Page</div>
+          </div>
+
+          <div class="mySlides4 fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/portfolio/webapp/4.4.png" style="width:100%; height: 350px;">
+            <div class="text">Home Page</div>
+          </div>
+
+          <div class="mySlides4 fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/portfolio/webapp/4.5.png" style="width:100%; height: 350px;">
+            <div class="text">Product Management Page</div>
+          </div>
+
+          <div class="mySlides4 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/portfolio/webapp/4.6.png" style="width:100%; height: 350px;">
+            <div class="text">Walk-in Details</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <!-- END: SLIDESHOW ON FACEBOX -->
+
+          <div class="text-align:center">
+            <p>
+              The Online Ordering System that I developed for a client locally here in Kalibo, Aklan can be defined as a simple and convenient way for customers to purchase pastries online, without having to go to the bakery. This system for online food delivery is completely safe, secure and is a very popular method that is revolutionizing the way in which the food industry operates.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #5 -->
+      <div class="grid-item WebApp">
+        <a data-fancybox data-animation-duration="700" data-src="#rnaModal5" href="javascript:;" class="">
+          <img src="img/portfolio/webapp/5.png" alt="" class="portfolio-img" /></a>
+
+        <div style="display: none;" id="rnaModal5" class="animated-modal">
+          <h2>Kadeco Multi-Purpose Cooperative E-commerce Website</h2>
+          <br />
+
+          <!-- START: SLIDESHOW ON FACEBOX -->
+          <div class="slideshow-container">
+
+          <div class="mySlides5 fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/portfolio/webapp/5.png" style="width:100%; height: 350px;">
+            <div class="text">Home Page</div>
+          </div>
+
+          <div class="mySlides5 fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/portfolio/webapp/Dashboard.png" style="width:100%; height: 350px;">
+            <div class="text">Dashboard</div>
+          </div>
+
+          <div class="mySlides5 fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/portfolio/webapp/FB_Live_Chat.png" style="width:100%; height: 350px;">
+            <div class="text">Facebook Live Chat via Zotabox</div>
+          </div>
+
+          <div class="mySlides5 fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/portfolio/webapp/Sampled_Products.png" style="width:100%; height: 350px;">
+            <div class="text">Product Maintenance</div>
+          </div>
+
+          <div class="mySlides5 fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/portfolio/webapp/Yoast_SEO.png" style="width:100%; height: 350px;">
+            <div class="text">YOAST SEO</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <!-- END: SLIDESHOW ON FACEBOX -->
+
+          <div class="text-align:center">
+            <p>
+              KadecoMPC Website is developed by me during my training with the DICTs program called Digital Jobs PH (formerly known as Rural Impact Outsourcing Technical Training or RISTT). On our training I learned on how to develop a website on WordPress, interact with the MSME partner for Brand Fascination Profile, and putting the products online. I was given a chance to be introduced in WordPress plug-ins and how to bring the market online.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #6 -->
+      <div class="grid-item WebApp">
+        <a data-fancybox data-animation-duration="700" data-src="#rnaModal6" href="javascript:;" class="">
+          <img src="img/portfolio/webapp/6.png" alt="" class="portfolio-img" /></a>
+
+        <div style="display: none;" id="rnaModal6" class="animated-modal">
+          <h2>Premiere Business Online Booking and Reservation System</h2>
+          <br />
+
+          <!-- START: SLIDESHOW ON FACEBOX -->
+          <div class="slideshow-container">
+
+          <div class="mySlides6 fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="img/portfolio/webapp/6.png" style="width:100%; height: 350px;">
+            <div class="text">Home Page</div>
+          </div>
+
+          <div class="mySlides6 fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="img/portfolio/webapp/6.6.png" style="width:100%; height: 350px;">
+            <div class="text">Room Page</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <!-- END: SLIDESHOW ON FACEBOX -->
+
+          <div class="text-align:center">
+            <p>
+              This online booking and reservation system is a software I developed so the management of the hotel can manage information online. They allow tour and activity operators to accept bookings and reservation online and better manage their phone and in person bookings. Basically, they're a huge step up from a spreadsheet booking system
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #7 -->
+      <div class="grid-item WebApp">
+        <a data-fancybox data-animation-duration="700" data-src="#rnaModal7" href="javascript:;" class="">
+          <img src="img/portfolio/webapp/7.png" alt="" class="portfolio-img" /></a>
+
+        <div style="display: none;" id="rnaModal7" class="animated-modal">
+          <h2>Velocity-X Online Shopping System</h2>
+          <br />
+
+          <!-- START: SLIDESHOW ON FACEBOX -->
+          <div class="slideshow-container">
+
+          <div class="mySlides7 fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/portfolio/webapp/7.png" style="width:100%; height: 350px;">
+            <div class="text">Home Page</div>
+          </div>
+
+          <div class="mySlides7 fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/portfolio/webapp/7.7.png" style="width:100%; height: 350px;">
+            <div class="text">Member Login Page</div>
+          </div>
+
+          <div class="mySlides7 fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/portfolio/webapp/7.8.png" style="width:100%; height: 350px;">
+            <div class="text">Admin Dashboard</div>
+          </div>
+
+          <div class="mySlides7 fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/portfolio/webapp/7.9.png" style="width:100%; height: 350px;">
+            <div class="text">Account Management</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides7(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides7(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <!-- END: SLIDESHOW ON FACEBOX -->
+
+          <div class="text-align:center">
+            <p>
+              Developed a form of electronic commerce for Velocity-X which allows consumers to directly buy goods from the business over the internet using a web browser. The system made convinient for the customers enable shoppers to use 'search' features to find specific model, brands or items.
+            </p>
+          </div>
+        </div>
+      </div>
+   
+
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    Copyright &copy; 2020 by Adrian Abayon
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+  <script src="js/dreabayon.js"></script>
+
+
+<!-- Start: Slideshow on facebox -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+showSlides2(slideIndex);
+showSlides3(slideIndex);
+showSlides4(slideIndex);
+showSlides5(slideIndex);
+showSlides6(slideIndex);
+showSlides7(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+function plusSlides3(n) {
+  showSlides3(slideIndex += n);
+}
+function plusSlides4(n) {
+  showSlides4(slideIndex += n);
+}
+function plusSlides5(n) {
+  showSlides5(slideIndex += n);
+}
+function plusSlides6(n) {
+  showSlides6(slideIndex += n);
+}
+function plusSlides7(n) {
+  showSlides7(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function showSlides3(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function showSlides4(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides4");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function showSlides5(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides5");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function showSlides6(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides6");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function showSlides7(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides7");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- End: Slideshow on facebox -->
+
+  <script>
+    $(document).ready(function () {
+      var $grid = $(".item").isotope({
+        itemSelector: ".grid-item"
+      });
+
+      // filter items on button click
+      $("ul.filter-menu").on("click", "li", function () {
+        var filterValue = $(this).attr("data-filter");
+        $grid.isotope({ filter: filterValue });
+        return false;
+      });
+
+      $("ul.filter-menu li").click(function () {
+        $(this).addClass("active");
+        $(this)
+          .siblings()
+          .removeClass("active");
+      });
+    });
+  </script>
+
+  <script>
+    $(".item").isotope({
+      itemSelector: ".grid-item",
+      masonry: {
+        columnWidth: 303,
+        isFitWidth: true
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    $("[data-fancybox]").fancybox({
+      protect: true,
+      buttons: ["zoom", "share", "fullScreen", "close"]
+    });
+  </script>
+</body>
+
+</html>
